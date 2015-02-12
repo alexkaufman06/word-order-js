@@ -15,7 +15,7 @@ var wordOrder = function(input) {
   return results.join(" ");
 };
 
-$(document).ready(function(){
+$(document).ready(function() {
   $("form#word-order").submit(function(event) {
     var input = $("input#input").val();
     var answer = wordOrder(input);
