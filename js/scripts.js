@@ -3,7 +3,7 @@ var wordOrder = function(input) {
   var answer = {};
 
   listOfWords.forEach(function(word) {
-    // if (/[.!@#$%^&*(),?]/.test(word)) {
+    // if (/[.!@#$%^&*(),?]/.test(word)) {  // this might be used for efficiency?
       word = word.replace(/[.!@#$%^&*(),?]/g,"");
     // }
 
