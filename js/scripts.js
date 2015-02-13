@@ -1,8 +1,12 @@
 var wordOrder = function(input) {
-  var listOfWords = input.split(" ");
+  var listOfWords = input.toLowerCase().split(" ");
   var answer = {};
 
   listOfWords.forEach(function(word) {
+    if (/[.!@#$%^&*(),?]/.test(word)) {
+      word = word.replace(/[.!@#$%^&*(),?]/g,"");
+    }
+
     if (answer[word] === undefined) {
       answer[word] = 1;
     } else {
@@ -10,9 +14,7 @@ var wordOrder = function(input) {
     }
   });
 
-  var results = Object.keys(answer).sort(function(a, b) {return answer[b]-answer[a]});
-
-  return results.join(" ");
+  return (Object.keys(answer).sort(function(a, b) {return answer[b]-answer[a]})).join(" ");
 };
 
 $(document).ready(function() {
