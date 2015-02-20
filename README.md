@@ -5,7 +5,7 @@ The user enters in a sentence and word frequency is returned.
 Clone repository and open the index.html file.
 ```
 
-[View site here](http://alexkaufman06.github.io/word_order_js/)
+[View site here](http://alexkaufman06.github.io/word-order-js/)
 
 ### Bug Reports:
 ```
